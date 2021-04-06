@@ -12,12 +12,14 @@
       <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
       <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
 
-
-
-
    </head>
-
+   <script>
+      function myFunction() {
+        alert("submitted successfully");
+      }
+      </script>
    <body>
+      
       <div data-role = "page" id = "pageone">
          <div data-role = "header">
             <h1>Welcome to jquery form example</h1>
@@ -49,7 +51,7 @@
                      <input type = "tel" name = "contact" id = "contact" 
                         placeholder = "Enter your number" maxlength="10">
 
-                     <button id = "button-1">Submit</button>
+                     <button onclick="myfunction()">Submit</button>
 
                    
          </div>
